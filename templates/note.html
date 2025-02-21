@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hand Gesture Recognition Test</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles_note.css') }}">
+</head>
+<body>
+  <video id="video" autoplay style="display: none"></video>
+  <canvas id="canvas" style="display: none"></canvas>
+  <canvas id="outputCanvas"></canvas>
+
+  <div class="catalog">
+    <header>
+      <h1 id="headerH1">Universitatea de Vest</h1>
+    </header>
+    <nav>
+        <ul>
+          <li><form action="/index" method="post">
+            <button id="index" type="submit">Date Student</button>
+          </form>
+           </li>
+          <li>
+            <form action="/istoric_scolar" method="post">
+              <button id="istoric_scolar" type="submit">Istoric Scolar</button>
+            </form>
+          </li>
+          <li><form action="/note" method="post">
+            <button id="note" type="submit">Note</button>
+          </form></li>
+        </ul>
+      </nav>
+    <main>
+      <!-- Dropdown Section -->
+      <section>
+        <form action="/select_year" method="post" id="yearForm">
+          <label id= "label_select"for="yearSelect">Selectează anul de studiu:</label>
+          <select id="yearSelect" name="year">
+            <option value="1">Anul 1</option>
+            <option value="2">Anul 2</option>
+            <option value="3">Anul 3</option>
+          </select>
+          <button type="submit" id="yearFormButton">Select</button>
+        </form>
+      </section>
+ 
+      <!-- New Table Section -->
+      <section id="istoric-scolar-section">
+        <h2>Note</h2>
+        <table id="isotric_table">
+          <thead>
+            <tr>
+              <th>Materie</th>
+              <th>Semestru</th>
+              <th>Nota</th>
+              <th>Credite</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in data %}
+            <tr>
+              <td>{{ row[0] }}</td>
+              <td>{{ row[1] }}</td>
+              <td>{{ row[2] }}</td>
+              <td>{{ row[3] }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <div id="customCursor"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

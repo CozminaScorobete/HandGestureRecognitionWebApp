@@ -1,0 +1,187 @@
+body {
+  font-family: monospace;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header {
+  background-image: linear-gradient(145deg, #ce9b21 0%, #076299 100%);
+  padding: 5px;
+  position: relative;
+  z-index: 1;
+  padding-top: 10px;
+}
+
+  #headerH1 {
+    color: white;
+    text-align: center;
+  }
+  
+
+  
+  nav {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 80px;
+    z-index: 5;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li button {
+    margin: 0 15px;
+    
+  }
+  
+ 
+  
+  main {
+    padding: 30px 0px 200px 120px;
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    /* border-radius: 10px; */
+    /* margin: 20px; */
+    z-index: 1;
+    position: absolute;
+    /* width: calc(100% - 40px); */
+    width: 100%;
+    margin-top: 34px;
+    opacity: 0.9;
+  }
+ 
+  
+  #outputCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  #customCursor {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 10;
+  }
+  
+  #box-container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px; /* Ajustați înălțimea după necesități */
+    color: white;
+    margin-top: 200px;
+    padding: 10px;
+    margin-right: 250px;
+  }
+  .box {
+    width: 500px;
+    height: auto; /* Ajustăm înălțimea automat pentru a se potrivi conținutului */
+    background-color: rgba(255, 255, 255, 0.2); /* Culorile pot fi ajustate */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 20px; /* Adăugăm padding pentru spațiu interior */
+    flex-direction: column; /* Aliniem conținutul pe verticală */
+    font-family: monospace;
+    overflow: hidden; /* Ascundem orice conținut care depășește dimensiunile casetei */
+    word-wrap: break-word; /* Permite cuvintelor să fie împărțite pe mai multe rânduri */
+    overflow-wrap: break-word; /* Asigură împărțirea textului pe mai multe rânduri */
+    white-space: pre-wrap; /* Păstrează spațiile și formatarea textului */
+    text-align: left; /* Aliniază textul la stânga */
+    line-height: 1.5; /* Spațiere între rânduri pentru lizibilitate */
+}
+
+
+  
+#box-container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px; /* Ajustați înălțimea după necesități */
+  color: white;
+  margin-top: 100px;
+  padding: 10px;
+  margin-right: 250px;
+}
+.box {
+  width: 500px;
+  height: auto; /* Ajustăm înălțimea automat pentru a se potrivi conținutului */
+  background-color: rgba(255, 255, 255, 0.2); /* Culorile pot fi ajustate */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding: 20px; /* Adăugăm padding pentru spațiu interior */
+  flex-direction: column; /* Aliniem conținutul pe verticală */
+  font-family: monospace;
+  overflow: hidden; /* Ascundem orice conținut care depășește dimensiunile casetei */
+  word-wrap: break-word; /* Permite cuvintelor să fie împărțite pe mai multe rânduri */
+  overflow-wrap: break-word; /* Asigură împărțirea textului pe mai multe rânduri */
+  white-space: pre-wrap; /* Păstrează spațiile și formatarea textului */
+  text-align: left; /* Aliniază textul la stânga */
+  line-height: 1.5; /* Spațiere între rânduri pentru lizibilitate */
+}
+
+
+    
+#istoric_scolar {
+  color: #ffffff; /* Textul va fi alb */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: block;
+  background-color: #333333; /* Culoarea de fundal a butonului */
+  border: 1px solid #333; /* O margine gri deschis pentru vizibilitate */
+  border-radius: 5px; /* Colțuri rotunjite pentru un aspect mai plăcut */
+  text-align: center; /* Centrarea textului */
+}
+
+#textulet{
+  color: #ffffff;
+  font-size: 30px;
+  margin-top: 100px;
+}
+#note {
+  color: #ffffff; /* Textul va fi alb */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: block;
+  background-color: #333333; /* Culoarea de fundal a butonului */
+  border: 1px solid #333; /* O margine gri deschis pentru vizibilitate */
+  border-radius: 5px; /* Colțuri rotunjite pentru un aspect mai plăcut */
+  text-align: center; /* Centrarea textului */
+}
+
+#index {
+  color: #ffffff; /* Textul va fi alb */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: block;
+  background-color: #333333; /* Culoarea de fundal a butonului */
+  border: 1px solid #333; /* O margine gri deschis pentru vizibilitate */
+  border-radius: 5px; /* Colțuri rotunjite pentru un aspect mai plăcut */
+  text-align: center; /* Centrarea textului */
+}
+

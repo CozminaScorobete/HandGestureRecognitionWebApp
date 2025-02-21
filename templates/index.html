@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hand Gesture Recognition Test</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  
+</head>
+<body>
+  <video id="video" autoplay style="display: none"></video>
+  <canvas id="canvas" style="display: none"></canvas>
+  <canvas id="outputCanvas"></canvas>
+
+  <div class="catalog">
+    <header>
+      <h1 id="headerH1">Universitatea de Vest</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><form action="/index" method="post">
+          <button id="index" type="submit">Date Student</button>
+        </form>
+         </li>
+        <li>
+          <form action="/istoric_scolar" method="post">
+            <button id="istoric_scolar" type="submit">Istoric Scolar</button>
+          </form>
+        </li>
+        <li><form action="/note" method="post">
+          <button id="note" type="submit">Note</button>
+        </form></li>
+      </ul>
+    </nav>
+    <main>
+      <div id="textulet">Date Student</div>
+      <section id="box-container">
+        <div class="box">
+          {% with messages = get_flashed_messages(with_categories=true) %}
+            {% for category, message in messages %}
+              {% if category == 'card1' %}
+              <p>{{ message }}</p>
+              {% endif %}
+            {% endfor %}
+          {% endwith %}
+        </div>
+        <div class="box">
+          {% with messages = get_flashed_messages(with_categories=true) %}
+          {% for category, message in messages %}
+            {% if category == 'card2' %}
+            <p>{{ message }}</p>
+            {% endif %}
+          {% endfor %}
+        {% endwith %}
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="customCursor"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

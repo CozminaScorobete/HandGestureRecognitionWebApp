@@ -1,0 +1,207 @@
+body {
+    font-family: monospace;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  header {
+    background-image: linear-gradient(145deg, #ce9b21 0%, #076299 100%);
+    padding: 5px;
+    position: relative;
+    z-index: 1;
+    padding-top: 10px;
+  }
+  
+    #headerH1 {
+      color: white;
+      text-align: center;
+    }
+    
+  
+    
+    nav {
+      background-color: #333;
+      color: white;
+      width: 100%;
+      position: fixed;
+      top: 80px;
+      z-index: 5;
+    }
+    
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+    
+    nav ul li {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+      display: block;
+    }
+    
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+      display: block;
+    }
+    
+    main {
+      padding: 30px 0px 200px 120px;
+      background: linear-gradient(45deg, #49a09d, #5f2c82);
+      /* border-radius: 10px; */
+      /* margin: 20px; */
+      z-index: 1;
+      position: absolute;
+      /* width: calc(100% - 40px); */
+      width: 100%;
+      margin-top: 34px;
+      opacity: 0.9;
+    }
+   
+    
+    #outputCanvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    
+    #customCursor {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 10;
+    }
+  
+  
+      
+  #istoric_scolar {
+    color: #ffffff; /* Textul va fi alb */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    background-color: #333333; /* Culoarea de fundal a butonului */
+    border: 1px solid #333; /* O margine gri deschis pentru vizibilitate */
+    border-radius: 5px; /* Colțuri rotunjite pentru un aspect mai plăcut */
+    text-align: center; /* Centrarea textului */
+  }
+  
+  #istoric_scolar:hover {
+    background-color:#5f2c82; /* Culoarea de fundal la hover */
+  }
+  
+  /* Add these styles to your styles_isotric.css */
+  
+  table {
+    width: 1500px;
+    border-collapse: collapse;
+    margin: 50px 0;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 80px;
+  }
+  
+  table th, table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+  }
+  
+  table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  #yearFormButton {
+    padding: 10px 20px; /* Ajustați padding-ul pentru a mări butonul */
+    font-size: 16px; /* Ajustați dimensiunea textului */
+    border-radius: 5px; /* Rotunjire colțuri */
+    color: #ffffff; /* Culoare text */
+    border: none; /* Eliminați conturul butonului */
+    cursor: pointer; /* Cursor pointer */
+    transition: background-color 0.3s ease; /* Tranziție pentru efectul de hover */
+    
+    color: #ffffff; /* Textul va fi alb */
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #333333; /* Culoarea de fundal a butonului */
+    border: 1px solid #333; /* O margine gri deschis pentru vizibilitate */
+    border-radius: 5px; /* Colțuri rotunjite pentru un aspect mai plăcut */
+    text-align: center; /* Centrarea textului */
+  }
+  
+  #yearFormButton:hover {
+    background-color: #003d80; /* Culoare de fundal pe hover */
+  }
+#yearSelect{
+    margin-top: 100px;
+    padding: 20px 20px;
+}
+
+  #yearSelect:focus,
+  #yearFormButton:hover {
+    border-color: #5f2c82;
+    background-color: #5f2c82;
+    color: #ffffff;
+  }
+
+  #label_select{
+    color: #ffffff;
+    font-size: 20px;
+  }
+    
+#istoric_scolar {
+    color: #ffffff; /* Textul va fi alb */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    background-color: #333333; /* Culoarea de fundal a butonului */
+    border: 1px solid #333; /* O margine gri deschis pentru vizibilitate */
+    border-radius: 5px; /* Colțuri rotunjite pentru un aspect mai plăcut */
+    text-align: center; /* Centrarea textului */
+  }
+  
+  
+  #note {
+    color: #ffffff; /* Textul va fi alb */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    background-color: #333333; /* Culoarea de fundal a butonului */
+    border: 1px solid #333; /* O margine gri deschis pentru vizibilitate */
+    border-radius: 5px; /* Colțuri rotunjite pentru un aspect mai plăcut */
+    text-align: center; /* Centrarea textului */
+  }
+  
+  #index {
+    color: #ffffff; /* Textul va fi alb */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    background-color: #333333; /* Culoarea de fundal a butonului */
+    border: 1px solid #333; /* O margine gri deschis pentru vizibilitate */
+    border-radius: 5px; /* Colțuri rotunjite pentru un aspect mai plăcut */
+    text-align: center; /* Centrarea textului */
+  }
+  
