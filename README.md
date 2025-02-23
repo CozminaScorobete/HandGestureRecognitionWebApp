@@ -11,7 +11,7 @@ The Hand Gesture Recognition Web App allows real-time recognition of hand gestur
 
 
 ## 🎥 Demo
-![Demo](link_to_screenshot)
+![Demo]([link_to_screenshot](https://github.com/CozminaScorobete/HandGestureRecognitionWebApp/blob/main/2025-02-23%2021-02-22.mkv))
 
 ## 📄 License
 This project is licensed under the **GNU General Public License**.
