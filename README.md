@@ -1,7 +1,7 @@
 # Hand Gesture Recognition Web App
 
 ## 📝 Description
-The Hand Gesture Recognition Web App allows real-time recognition of hand gestures using a webcam. This project demonstrates how computer vision and deep learning can be applied to create hands-free interaction.
+The Hand Gesture Recognition Web App allows real-time recognition of hand gestures using a webcam and uses it as input. This project demonstrates how computer vision and deep learning can be applied to create hands-free interaction.
 
 ## 🚀 Technologies Used
 - **Python** - Flask for backend
